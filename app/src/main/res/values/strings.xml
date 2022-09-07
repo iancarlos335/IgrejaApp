@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IgrejaApp</string>
+    <string name="username">Usuário</string>
+    <string name="password">Senha</string>
+    <string name="login">Entrar</string>
+
+</resources>
