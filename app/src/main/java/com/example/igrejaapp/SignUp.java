@@ -3,6 +3,7 @@ package com.example.igrejaapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActivityManager;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,10 +31,14 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-               // new Task().execute(); // Nesse caso ele vai chamar uma classe pra fazer as ações
+               new Task().execute(); // TODO desafio de colocar essas informações por uma classe estrangeira
 
             }
         });
+
+    }
+
+    class Task extends AsyncTask<Void, Void, Void>{
 
     }
 }
