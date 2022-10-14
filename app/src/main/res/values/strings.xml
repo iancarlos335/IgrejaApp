@@ -4,6 +4,6 @@
     <string name="password">Senha</string>
     <string name="login">Entrar</string>
     <string name="sign_up">Cadastrar</string>
-
+    <string name="signuphere">Se cadastre aqui</string>
 
 </resources>
