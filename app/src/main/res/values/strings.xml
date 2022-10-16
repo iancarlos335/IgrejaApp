@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">IgrejaApp</string>
+    <string name="fullname">Nome Completo</string>
+    <string name="email">Email</string>
     <string name="username">Usuário</string>
     <string name="password">Senha</string>
     <string name="login">Entrar</string>
     <string name="sign_up">Cadastrar</string>
     <string name="signuphere">Se cadastre aqui</string>
+    <string name="loginhere">Faça login aqui</string>
 
 </resources>
