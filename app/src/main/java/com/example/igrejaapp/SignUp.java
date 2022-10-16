@@ -30,36 +30,31 @@ public class SignUp extends AppCompatActivity {
         btnSignUp = findViewById(R.id.btnSignUp);
 
 
-        btnSignUp.setOnClickListener(new View.OnClickListener() { //Dentro desse evento que serão precessados o cadastro dos dados (colocar as ações aqui).
-            @Override
-            public void onClick(View view) {
+        //Dentro desse evento que serão precessados o cadastro dos dados (colocar as ações aqui).
+        btnSignUp.setOnClickListener(view -> {
 
-                //Start ProgressBar first (Set visibility VISIBLE)
-                Handler handler = new Handler(Looper.getMainLooper());
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        //Starting Write and Read data with URL
-                        //Creating array for parameters
-                        String[] field = new String[2];
-                        field[0] = "param-1";
-                        field[1] = "param-2";
-                        //Creating array for data
-                        String[] data = new String[2];
-                        data[0] = "data-1";
-                        data[1] = "data-2";             //Fill that only with your own IPV4. Using CMD to consult
-                        PutData putData = new PutData("http://192.168.0.196/ConnectionPhp/signup.php", "POST", field, data);
-                        if (putData.startPut()) {
-                            if (putData.onComplete()) {
-                                String result = putData.getResult();
-                                //End ProgressBar (Set visibility to GONE)
-                            }
-                        }
-                        //End Write and Read data with URL
+            //Start ProgressBar first (Set visibility VISIBLE)
+            Handler handler = new Handler(Looper.getMainLooper());
+            handler.post(() -> {
+                //Starting Write and Read data with URL
+                //Creating array for parameters
+                String[] field = new String[2];
+                field[0] = "param-1";
+                field[1] = "param-2";
+                //Creating array for data
+                String[] data = new String[2];
+                data[0] = "data-1";
+                data[1] = "data-2";             //Fill that only with your own IPV4. Using CMD to consult
+                PutData putData = new PutData("http://192.168.0.196/ConnectionPhp/signup.php", "POST", field, data);
+                if (putData.startPut()) {
+                    if (putData.onComplete()) {
+                        String result = putData.getResult();
+                        //End ProgressBar (Set visibility to GONE)
                     }
-                });
+                }
+                //End Write and Read data with URL
+            });
 
-            }
         });
 
     }

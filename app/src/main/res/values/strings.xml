@@ -6,7 +6,7 @@
     <string name="password">Senha</string>
     <string name="login">Entrar</string>
     <string name="sign_up">Cadastrar</string>
-    <string name="signuphere">Se cadastre aqui</string>
-    <string name="loginhere">Faça login aqui</string>
+    <string name="signuphere">Ainda não tem uma conta? Cadastre-se</string>
+    <string name="loginhere">Já possui uma conta? Faça login</string>
 
 </resources>
